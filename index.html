@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        penguin: '#fffbf0',
                     }
                 }
             }
@@ -21,14 +23,15 @@
 </head>
 
 <body>
-    <header>
-        <section class="container mx-auto flex items-center justify-around">
-            <div>
-                <h1 class="uppercase text-5xl font-bold">
+    <header class="pb-32 pt-12">
+        <section class="container mx-auto sm:flex items-center justify-around">
+            <div class="space-y-4">
+                <h1 class="uppercase text-2xl sm:text-5xl font-bold">
                     <span class="text-amber-400">Be the Penguins</span> <br>
                     <span class="">of Winter</span>
                 </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem repudiandae optio qui dolore non?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ea rem repudiandae optio qui dolore
+                    non?</p>
                 <button class="uppercase bg-[#A4BC46] py-3 px-7 font-semibold font text-white
                 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6 inline">
@@ -37,8 +40,8 @@
                     </svg>
                     Buy now</button>
             </div>
-            <div>
-                <img src="images/model.png" alt="">
+            <div class="pt-8 sm:pt-0">
+                <img class="w-1/2 sm:w-full" src="images/model.png" alt="">
             </div>
         </section>
     </header>
